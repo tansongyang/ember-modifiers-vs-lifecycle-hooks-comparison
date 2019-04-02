@@ -1,0 +1,7 @@
+<button {{action this.toggle}}>
+  {{if this.show "Hide" "Show"}}
+</button>
+{{#if this.show}}
+  <MouseoverModifiers />
+  <MouseoverLifecycleHooks />
+{{/if}}

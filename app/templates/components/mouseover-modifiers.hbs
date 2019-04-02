@@ -1,0 +1,10 @@
+<div
+  style="border: 1px solid black;"
+  {{on "mouseover" (action this.highlight)}}
+  {{on "mousemove" (action this.setCoordinates)}}
+  {{on "mouseout" (action this.clear)}}
+>
+  Mouse over me!
+  <br />
+  {{if this.x this.x "outside"}} | {{if this.y this.y "outside"}}
+</div>
